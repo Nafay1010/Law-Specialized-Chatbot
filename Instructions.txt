@@ -1,0 +1,53 @@
+Below are the following requriements needed to setup the project:
+- Installing NodeJS
+- Installing Python with PIP
+Confirm that you have installed NodeJS and Python by running the following commands in your terminal:
+```node --version```
+```python --version```
+```pip --version```
+Extract the file, open the project in IDE of your choice, I am using VSCODE.
+When the project is opened, you will find 4 folders, namely: chatbot-admin, chatroom, client, server.
+To open the project on the website, there are some dependencies that need to be installed.
+Open the terminal on the root of the project (which means you are in chatbot folder).
+Run the following command on the terminal making sure the terminal is on the root of the project:
+
+Setting up server side (backend of application), making sure you have already installed python and pip.
+```cd server```
+```python reqs.py```
+```python server.py```
+If you see the below on the terminal, it means the server is running:
+ * Serving Flask app 'server'
+ * Debug mode: on
+INFO:werkzeug:WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8080
+
+If any error are found in the terminal, they will probably be missing dependencies, install them using pip.
+Open a new terminal, dont close the previous terminal since the server is running on that.
+Setting up client side (frontend of application)
+```cd client```
+```npm install```
+```npm run build```
+```npm start```
+Open the browser and type http://localhost:3000/
+
+The chatroom is seperate component of the application,
+Open a new terminal
+Server side of chatroom (backend of chatroom)
+```cd chatroom```
+```cd server```
+```npm install```
+```nodemon index.js```
+Open a new terminal, dont close the previous terminal since the server is running on that.
+Client Side of chatroom (frontend of chatroom)
+```cd chatroom```
+```cd client```
+```npm install```
+```npm run build```
+```npm start```
+
+Admin panel is a seperate website and it is completly independent of the main website. To open it
+Run the following commands on the terminal mqking sure the terminal is on the root of the project:
+```cd chatbot-admin```
+```npm install```
+```npm run build```
+```npm start```
