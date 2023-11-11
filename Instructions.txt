@@ -42,7 +42,6 @@ Client Side of chatroom (frontend of chatroom)
 ```cd chatroom```
 ```cd client```
 ```npm install```
-```npm run build```
 ```npm start```
 
 Admin panel is a seperate website and it is completly independent of the main website. To open it
