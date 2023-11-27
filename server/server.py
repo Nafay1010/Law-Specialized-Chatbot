@@ -14,9 +14,9 @@ global index
 
 app = Flask(__name__)
 CORS(app)
-app.secret_key = "dasdasdasdassdfsdf"
+app.secret_key = ""
 # OpenAI API key
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = ""
 # Create LLMPredictor and the index once
 llm_predictor = LLMPredictor(llm=ChatOpenAI(temperature=0.5, model_name="gpt-3.5-turbo", max_tokens=2000))
 index = None  # Initialize to None, it will be constructed later
